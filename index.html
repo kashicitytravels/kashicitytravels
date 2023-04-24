@@ -1,0 +1,340 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap Link -->
+
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Font Awesome Cdn -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+</head>
+
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo"><span>Kashi</span> City Travels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Home Section Start -->
+  <div class="home">
+    <div class="content">
+      <h5>Welcome To Kashi City Travels</h5>
+      <p><span>Name:</span> Praveen Tiwari<br>
+        <span>Phone:</span> 9369376546, 9335689515<br>
+      </p>
+      <h1>Visit <span class="changecontent"></span></h1>
+      <a href="#book">Book Place</a>
+    </div>
+  </div>
+  <!-- Home Section End -->
+
+  <!-- Section Book Start -->
+  <section class="book" id="book">
+    <div class="container">
+
+      <div class="main-text">
+        <h1><span>B</span>ook</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/book-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <form action="https://formspree.io/f/moqzypdr" method="POST">
+            <label for="name-input">Full Name</label>
+            <input type="text" name="Name" class="form-control" id="name-input" minlength="5" maxlength="30" required
+              autocomplete="off"><br>
+
+            <label for="contact-input">Contact Number</label>
+            <input type="tel" name="Contact Number" class="form-control" id="contact-input" minlength="10"
+              maxlength="15" required autocomplete="off"><br>
+
+            <label for="where-input">Where To</label>
+            <input type="text" name="Where To" class="form-control" id="where-input" required autocomplete="off"><br>
+
+            <label for="howmany-input">How Many</label>
+            <input type="text" name="How Many" class="form-control" id="howmany-input" required autocomplete="off"><br>
+
+            <label for="arrival-input">Arrival Date</label>
+            <input type="date" name="Arrivals" class="form-control" id="arrival-input" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+
+            <label for="leaving-input">Leaving Date</label>
+            <input type="date" name="Leaving" class="form-control" id="leaving-input" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+
+            <input type="submit" value="Book Now" class="submit" required>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section Book End -->
+
+  <!-- Section Packages Start -->
+  <section class="packages" id="packages">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>D</span>estinations We Offer</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 1 pic 1.jpg" alt="">
+              <img src="./images/div 1 pic 2.jpg" alt="">
+              <img src="./images/div 1 pic 3.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Varanasi - Sarnath - Ramnagar</h3>
+              <p>kashi vishwanath mandir, kal bhairav madir, sarnath ramnagar kila, birla mandir, B.H.U., sankat mochan,
+                durgakund mandir, tulsi manas mandir, tridev mandir</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 2 pic 1.jpg" alt="">
+              <img src="./images/div 2 pic 2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Vindhyachal - Sitamarhi</h3>
+              <p>maa vindhyavasini mandir, kali kho, asthbhuji, sitakund, sitamarhi mandir</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 3 pic 1.jpg" alt="">
+              <img src="./images/div 3 pic 2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Prayagraj (Triveni Sangam)</h3>
+              <p>triveni sangam, lete hanuman mandir, anand bhavan, saheed chandrashekar azad park, new yamuna bridge
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ======================================= -->
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 4 pic 1.jpg" alt="">
+              <img src="./images/div 4 pic 2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Sri Ram Mandir (Ayodhya)</h3>
+              <p>sri ram janm bhumi, hanuman ghadi, dashrat mahal, kanak bhavan, surya nadi, sita ki rasoi, tulsi
+                smarak(museum) </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 5 pic 1.jpg" alt="">
+              <img src="./images/div 5 pic 2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Bharat Milap (Chitrakut)</h3>
+              <p>gupta godavari, ramghat, hanuman dhara, sati ansuya mandir, bhart milap mandir, janki kund</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <div class="slideshow">
+              <img src="./images/div 6 pic 1.jpg" alt="">
+              <img src="./images/div 6 pic 2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3>Bodhgaya (Gaya)</h3>
+              <p>mahaubudha mandir, bodhi ped, mahan budha murti, vishnuputh, that montessori mandir</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Section Packages End -->
+
+  <!-- Section Services Start -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card-body">
+              <h3>Daily Tour</h3>
+              <p>Kashi Darshan, Gaya & Bodhgaya, Deoghar, Prayagraj, Ayodhya, Chitrakoot & Maihar</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-car"></i>
+            <div class="card-body">
+              <h3>All Cabs Available</h3>
+              <p>Sedan, Ertiga, Innova, Cresta & Temp traveller etc.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body">
+              <h3>Hotel Booking</h3>
+              <p>Booking of hotels, lounge, boating, pickup and drop.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Section Services End -->
+
+  <!-- About Start -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1>About <span>Us</span></h1>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/about-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="contact-card">
+            <h2>What we Offer!</h2>
+            <p id="headerpara">We provide resources for booking guided tours, hiring local guides, and engaging in
+              responsible travel practices to ensure a meaningful and respectful travel experience</p>
+            <h2>Contact Us</h2>
+            <p><span class="label">Name:</span> Praveen Tiwari<br>
+              <span class="label">Phone:</span> 9369376546, 9335689515<br>
+              <span class="label">Email:</span> KashiCitytravels@gmail.com<br>
+              <span class="label">Address:</span> Misir Pokhra, Behind PDR Mal, Varanasi, UP-221001
+            </p>
+            <a class="nav-link" href="#book"><button id="about-btn">Book Now</button></a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- About End -->
+
+  <!-- Footer Start -->
+  <footer id="footer">
+    <h1><span>Kashi</span> City Travels</h1>
+    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+    <div class="social-links">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div> -->
+    <div class="credit">
+      <p>Designed By <a href="https://www.sumitverma.tk/">Sumit Verma</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy;Copyright Kashi City Tavels. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
